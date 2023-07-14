@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home', [\App\Http\Controllers\ProductController::class, 'index']);
+Route::get('/product/add', [\App\Http\Controllers\ProductController::class, 'addProduct']);
