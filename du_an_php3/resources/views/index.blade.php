@@ -19,7 +19,6 @@
                 <span class="block font-bold">Giá: {{$pr->price}}</span>
                 <span class="text-red-500">Giảm:{{$pr->sale}}%</span>
                 <div class="mt-[10px] flex justify-between items-center">
-
                     <div>
                         <i class="fas fa-shopping-cart border-2 p-2  rounded-2xl bg-green-200 font-bold hover:bg-red-300"> <a href="">Add to cart</a></i>
                     </div>
