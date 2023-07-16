@@ -45,7 +45,7 @@
         <div class=" p-4 rounded-2xl mt-[20px]">
             <marquee behavior="#" direction="left">
                 <p class="text-2xl font-bold text-red-500">
-                    Chào mừng các bạn đã đến với shop JUNGX của chúng tôi!!! Rất hân hạnh được tài trợ!!!
+                    Chào mừng các bạn đã đến với shop JUNGX của chúng tôi!!! Rất hân hạnh được phục vụ!!!
                 </p>
             </marquee>
         </div>

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->integer('price');
-            $table->integer('sale');
+            $table->integer('number');
             $table->string('color');
             $table->string('img');
             $table->integer('size');
@@ -27,7 +27,7 @@ return new class extends Migration
             $table->integer('pin');
             $table->string('company');
             $table->integer('id_category');
-            $table->integer('status')->default(1);
+            $table->text('status');
             $table->timestamps();
         });
     }

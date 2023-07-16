@@ -18,7 +18,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('bootstrap/css/sb-admin-2.min.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
 </head>
 
 <body id="page-top">
@@ -42,44 +42,29 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/duan1/index.php?url=admin_index">
-
-                    <span>Dashboard</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/duan1/index.php?url=qltour_index">
-
-                    <span>Quản lí Tour</span></a>
+                <a class="nav-link" href="{{route('route_product_list')}}">
+                <i class="fas fa-phone"></i>
+                    <span>Quản lí điện thoại</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/duan1/index.php?url=qlbooking_index">
-
-                    <span>Quản lí booking</span></a>
+                <i class="fas fa-phone"></i>
+                    <span>Quản lí danh mục </span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/duan1/index.php?url=qluser_index">
-
-                    <span>Quản lí Khách Hàng</span></a>
+                <i class="fas fa-gift"></i>
+                    <span>Quản lí khyến mại</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/duan1/index.php?url=qlcate_index">
-
-                    <span>Quản lí danh mục</span></a>
+                <i class="fas fa-bullhorn"></i>
+                    <span>Quản lí banner marketing</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/duan1/index.php?url=qlcontact_index">
-
-                    <span>Quản lí liên hệ</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/duan1/index.php?url=qlcomment_index">
-
-                    <span>Quản lí bình luận</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/duan1/index.php?url=qlblog_index">
-
-                    <span>Quản lí tin tức</span></a>
+                <i class="fas fa-file-invoice"></i>
+                    <span>Quản lí hóa đơn, in hóa đơn</span></a>
             </li>
 
 
@@ -268,6 +253,7 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+                @include('template.error')
                 @yield('content')
                 <!-- /.container-fluid -->
 

@@ -10,14 +10,14 @@
             @foreach($product as $pr)
             <div class="item border-2 rounded-2xl p-5">
                 <div class="item2 mb-2">
-                    <img src="{{ asset('img/ss2.jpg') }}" alt="">
+                    <img src="{{ asset('img/'.$pr->img)}}" alt="" height="120px">
                     <div class="anh">
-                        <img src="{{ asset('img/ss2.jpg') }}" alt="">
+                        <img src="{{ asset('img/i1 (2).jpg') }}" alt="">
                     </div>
                 </div>
-                <h2 class="text-[20px] text-orange-500 mb-[10px] hover:underline hover:text-green-500"><a href="">{{$pr->name}}</a></h2>
-                <span class="block font-bold">Giá: {{$pr->price}}</span>
-                <span class="text-red-500">Giảm:{{$pr->sale}}%</span>
+                <h2 class="text-[25px] text-orange-500 mb-[10px] hover:underline hover:text-green-500 font-bold"><a href="">{{$pr->name}}</a></h2>
+                <span class="block font-bold">Giá: {{$pr->price}} Vnđ</span>
+                <span class="text-red-500">Số lượng:{{$pr->number}}</span>
                 <div class="mt-[10px] flex justify-between items-center">
                     <div>
                         <i class="fas fa-shopping-cart border-2 p-2  rounded-2xl bg-green-200 font-bold hover:bg-red-300"> <a href="">Add to cart</a></i>
