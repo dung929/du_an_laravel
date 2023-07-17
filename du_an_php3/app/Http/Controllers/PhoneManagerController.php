@@ -30,6 +30,20 @@ class PhoneManagerController extends Controller
             }
         }
         $category = DB::table('category')->get();
-        return view('admin.add_phone',compact('category'));
+        return view('admin.add_phone', compact('category'));
+    }
+    public function edit(ProductRequest $request, $id)
+    {
+        $product = Product::find($id);
+        if ($request->isMethod('POST')) {
+            $result = Product::where('id', $id)->update($request->except('_token'));
+            if ($result) {
+                Session::flash('success', 'Success!');
+                return redirect()->route('route_product_edit', ['id' => $id]);
+            }
+        }
+        $category = DB::table('category')->get();
+        // dd($category);
+        return view('admin.edit_phone', compact('product', 'category'));
     }
 }

@@ -75,7 +75,7 @@
                                 <td>{{$pr->number}}</td>
                                 <td>{{$pr->name_category}}</td>
                                 <td>{{$pr->status}}</td>
-                                <td class="d-flex"><a href="" class="btn btn-primary m-2">Sửa</a>
+                                <td class="d-flex"><a href="{{route('route_product_edit',['id'=>$pr->id])}}" class="btn btn-primary m-2">Sửa</a>
                                     <a href="" class="btn btn-danger m-2">Xóa</a>
                                 </td>
                             </tr>
